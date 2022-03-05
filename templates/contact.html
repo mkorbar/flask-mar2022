@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pozdravljen svet</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
-<body>
-<nav>
-    <a href="/">Domov</a>
-    <a href="/o-meni">O meni</a>
-    <a href="o-meni/kontakt">Kontakt</a>
-</nav>
+{%  extends 'base.html' %}
+
+{% block css %}
+* {
+color: #ff0000;
+}
+
+{% endblock css %}
+
+{% block content %}
+
     <h1>Kontakt</h1>
     <p>Kdor me res hoce slišat naj me sam poišče</p>
-</ol>
-</body>
-</html>
+
+{% endblock content %}

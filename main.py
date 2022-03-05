@@ -1,3 +1,5 @@
+import datetime
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -5,7 +7,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    some_text = 'this is some text'
+    now = str(datetime.datetime.now())
+
+    seznam_mest = ['Ljubljana', 'Maribor', 'Celje', 'Koper']
+
+    return render_template("index.html",
+                           input_text=some_text,
+                           todays_date=now,
+                           mesta=seznam_mest
+                           )
 
 
 @app.route('/o-meni')

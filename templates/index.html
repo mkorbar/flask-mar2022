@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pozdravljen svet</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
-<body>
-<nav>
-    <a href="/">Domov</a>
-    <a href="/o-meni">O meni</a>
-    <a href="o-meni/kontakt">Kontakt</a>
-</nav>
+{% extends 'base.html' %}
+
+{% block title %}
+To je domaca stran
+{% endblock title %}
+
+
+{% block content %}
 
     <h1>To je moja prva spletna stran, dobrodosli</h1>
     <h2>Moje najljubse stvari so tri</h2>
@@ -20,7 +15,18 @@
     <li>ta</li>
 </ol>
 
+Današnji datum: {{ todays_date }}
+
+<pre>
+    {{ input_text }}
+</pre>
+
+<ul>
+    {% for mesto in mesta %}
+    <li>{{ mesto }}</li>
+    {% endfor %}
+</ul>
+
 <img src="/static/img/smartninja-logo.png" alt="Smartninja logo">
 
-</body>
-</html>
+{% endblock content %}

@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pozdravljen svet</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
-<body>
-<nav>
-    <a href="/">Domov</a>
-    <a href="/o-meni">O meni</a>
-    <a href="o-meni/kontakt">Kontakt</a>
-</nav>
+{% extends 'base.html' %}
+
+{% block content %}
     <h1>Moja predstavitvena stran</h1>
-    <h2>Življenjepis</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate dignissimos dolorem esse inventore laudantium, nihil nobis non nulla perferendis, quae ratione, reiciendis reprehenderit sapiente sit soluta tempora vel vero.</p>
-    <h2>Izobrazba</h2>
-    <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid at dicta dignissimos doloremque,
+<h2>Življenjepis</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate dignissimos dolorem esse inventore laudantium, nihil nobis non nulla perferendis, quae ratione, reiciendis reprehenderit sapiente sit soluta tempora vel vero.</p>
+<h2>Izobrazba</h2>
+<ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid at dicta dignissimos doloremque,
             doloribus incidunt iure laborum minima necessitatibus placeat possimus, similique tempora velit veniam! Eaque
             molestias quasi quisquam.
         </li>
@@ -27,7 +17,6 @@
             Aspernatur assumenda, at atque dolor nobis quibusdam tenetur! Deserunt incidunt ipsum iure placeat praesentium
             velit, vero!
         </li>
-    </ul>
-</ol>
-</body>
-</html>
+</ul>
+
+{% endblock content %}
